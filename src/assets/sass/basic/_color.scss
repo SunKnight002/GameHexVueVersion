@@ -1,0 +1,37 @@
+@use 'sass:map';
+$colors:(
+    darkblue:#100E24,
+    white:white,
+    black:#292929,
+    lightyellow:#FFE8BB,
+    gold:#FCD15B,
+    yellow:#FEDA77,
+    lightblue:#262B3F,
+    darkred:#870801,
+    midnight:#221F3C,
+    underyellow:#FFC700,
+    underred:#B00000,
+    lightgreen: #D8FFDF,
+    green: #6EE742,
+    deadred:#B00000,
+    fbblue:#1877F2,
+    linegreen:#23DB35,
+    usegreen:#087713,
+    usered:#C70000,
+    priceorange:#E98714,
+    gray:#8F9191,
+    lightgray: #E5E5E5,
+    grayblue: #35395b,
+    couponblue:#06508E,
+);
+
+
+body {
+    background-color: map.get($colors, darkblue );
+    color: map.get($colors, white);
+
+    ::selection {
+        color: map.get($colors, darkblue );
+        background-color: map.get($colors, yellow );
+    }
+}
