@@ -38,13 +38,6 @@
         }
         },
         mounted() {
-            // // 檢查螢幕寬度
-            // if (window.innerWidth < 968) {
-            //     this.isMenuOpen = false;
-            // } else {
-            //     this.isMenuOpen = true;
-            // }
-
             // 檢查螢幕寬度並設置初始值
             this.handleResize();
             // 添加 resize 事件監聽器
