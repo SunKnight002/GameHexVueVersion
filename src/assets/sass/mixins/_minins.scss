@@ -1,0 +1,19 @@
+@use '../basic/_var' as var;
+
+@mixin rwd($rwd) {
+    @media (max-width: $rwd) {
+        @content;
+    }
+}
+
+@mixin pad() {
+    @media (max-width: var.$pad) {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media (max-width: var.$phone) {
+        @content;
+    }
+}
